@@ -1,15 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { WelcomeComponent } from './welcome.component';
+import { Component, OnInit ,ViewChild,ElementRef} from '@angular/core';
 
-
-
-@NgModule({
-  declarations: [
-    WelcomeComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+@Component({
+  selector: 'app-welcome',
+  templateUrl: './welcome.component.html',
+  styleUrls: ['./welcome.component.css']
 })
-export class WelcomeModule { }
+export class WelcomeComponent implements OnInit {
+
+  @ViewChild('name') namekey!: ElementRef;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  startQuiz(){
+    localStorage.setItem("name", this.namekey.nativeElement.value);
+  }
+
+}

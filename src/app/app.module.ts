@@ -7,13 +7,17 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { QuestionComponent } from './question/question.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HhComponent } from './hh/hh.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     QuestionComponent,
-    HeaderComponent
+    HeaderComponent,
+    HhComponent,
+    ThanksComponent
   ],
   imports: [
     BrowserModule,

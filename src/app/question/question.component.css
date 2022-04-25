@@ -1,7 +1,20 @@
+body{
+    background-color:chartreuse
+}
+
+.options{
+    color: red;
+}
+.question{
+    color:gold
+}
+
+
 .card {
     max-width: 800px;
     margin: 0 auto;
     padding: 10px;
+    border:2px cornflowerblue
 }
 
 li {
@@ -11,7 +24,8 @@ li {
 }
 
 li .card:hover {
-    border: 1px solid blue;
+    border: 1px solid aqua;
+    background-color: aqua;
 }
 
 ol {
